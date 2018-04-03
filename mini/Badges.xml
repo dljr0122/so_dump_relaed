@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<badges>
+  <row Id="82946" UserId="3718" Name="Teacher" Date="2008-09-15T08:55:03.923" Class="3" TagBased="False" />
+  <row Id="82947" UserId="994" Name="Teacher" Date="2008-09-15T08:55:03.957" Class="3" TagBased="False" />
+  <row Id="82949" UserId="3893" Name="Teacher" Date="2008-09-15T08:55:03.957" Class="3" TagBased="False" />
+  <row Id="82950" UserId="4591" Name="Teacher" Date="2008-09-15T08:55:03.957" Class="3" TagBased="False" />
+  <row Id="82951" UserId="5196" Name="Teacher" Date="2008-09-15T08:55:03.957" Class="3" TagBased="False" />
+  <row Id="82952" UserId="2635" Name="Teacher" Date="2008-09-15T08:55:03.957" Class="3" TagBased="False" />
+  <row Id="82953" UserId="1113" Name="Teacher" Date="2008-09-15T08:55:03.957" Class="3" TagBased="False" />
+  <row Id="82954" UserId="4182" Name="Teacher" Date="2008-09-15T08:55:03.957" Class="3" TagBased="False" />
+  <row Id="26121705" UserId="9045377" Name="Teacher" Date="2017-12-03T06:53:17.017" Class="3" TagBased="False" />
+  <row Id="26121706" UserId="2015786" Name="Teacher" Date="2017-12-03T06:53:17.017" Class="3" TagBased="False" />
+  <row Id="26121707" UserId="333571" Name="Yearling" Date="2017-12-03T06:53:17.017" Class="2" TagBased="False" />
+  <row Id="26121708" UserId="223594" Name="Yearling" Date="2017-12-03T06:53:17.017" Class="2" TagBased="False" />
+  <row Id="26121709" UserId="6254131" Name="Yearling" Date="2017-12-03T06:53:17.017" Class="2" TagBased="False" />
+  <row Id="26121710" UserId="6864131" Name="Custodian" Date="2017-12-03T06:53:17.017" Class="3" TagBased="False" />
+  <row Id="26121711" UserId="9045621" Name="Informed" Date="2017-12-03T06:55:34.270" Class="3" TagBased="False" />
+  <row Id="26121712" UserId="9045616" Name="Informed" Date="2017-12-03T06:57:26.127" Class="3" TagBased="False" />
+  <row Id="26121713" UserId="5769220" Name="Informed" Date="2017-12-03T06:57:40.120" Class="3" TagBased="False" />
+</badges>
