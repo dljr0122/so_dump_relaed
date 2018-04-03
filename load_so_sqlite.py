@@ -65,40 +65,40 @@ ANATHOMY = {
         'Text': 'TEXT'
         },
     'PostLinks': {
-            'Id': 'INTEGER',
-            'CreationDate': 'DATETIME',
-            'PostId': 'INTEGER',
-            'RelatedPostId': 'INTEGER',
-            'PostLinkTypeId': 'INTEGER',
-            'LinkTypeId': 'INTEGER',
+        'Id': 'INTEGER',
+        'CreationDate': 'DATETIME',
+        'PostId': 'INTEGER',
+        'RelatedPostId': 'INTEGER',
+        'PostLinkTypeId': 'INTEGER',
+        'LinkTypeId': 'INTEGER',
         },
     'Users': {
-            'Id': 'INTEGER',
-            'Reputation': 'INTEGER',
-            'CreationDate': 'DATETIME',
-            'DisplayName': 'TEXT',
-            'LastAccessDate': 'DATETIME',
-            'WebsiteUrl': 'TEXT',
-            'Location': 'TEXT',
-            'Age': 'INTEGER',
-            'AboutMe': 'TEXT',
-            'Views': 'INTEGER',
-            'UpVotes': 'INTEGER',
-            'DownVotes': 'INTEGER',
-            'AccountId': 'INTEGER',
-            'ProfileImageUrl': 'TEXT'
+        'Id': 'INTEGER',
+        'Reputation': 'INTEGER',
+        'CreationDate': 'DATETIME',
+        'DisplayName': 'TEXT',
+        'LastAccessDate': 'DATETIME',
+        'WebsiteUrl': 'TEXT',
+        'Location': 'TEXT',
+        'Age': 'INTEGER',
+        'AboutMe': 'TEXT',
+        'Views': 'INTEGER',
+        'UpVotes': 'INTEGER',
+        'DownVotes': 'INTEGER',
+        'AccountId': 'INTEGER',
+        'ProfileImageUrl': 'TEXT'
        },
     'Tags': {
-            'Id': 'INTEGER',
-            'TagName': 'TEXT',
-            'Count': 'INTEGER',
-            'ExcerptPostId': 'INTEGER',
-            'WikiPostId': 'INTEGER'
+        'Id': 'INTEGER',
+        'TagName': 'TEXT',
+        'Count': 'INTEGER',
+        'ExcerptPostId': 'INTEGER',
+        'WikiPostId': 'INTEGER'
         }
 }
 
 def dump_files(file_names, anathomy,
-        so_xml_path='/media/sf_vb-shared/so_dump',
+        so_xml_path='all_data',
         dump_path='.',
         dump_database_name='so-dump.db',
         create_query='CREATE TABLE IF NOT EXISTS {table} ({fields})',
@@ -107,6 +107,9 @@ def dump_files(file_names, anathomy,
     logging.basicConfig(filename=os.path.join(dump_path, log_filename), level=logging.INFO)
     db = sqlite3.connect(os.path.join(dump_path, dump_database_name))
     for file in file_names:
+        # hardcoded: skip finished tables
+        if file in ['Badges', 'Comments']:
+            continue
         print("Opening {0}.xml".format(file))
         with open(os.path.join(so_xml_path, file + '.xml')) as xml_file:
             tree = etree.iterparse(xml_file)
