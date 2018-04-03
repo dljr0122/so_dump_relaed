@@ -2,3 +2,5 @@ so-dump.db
 so-parser.log
 *.swp
 all_data
+debug_data/
+output*
